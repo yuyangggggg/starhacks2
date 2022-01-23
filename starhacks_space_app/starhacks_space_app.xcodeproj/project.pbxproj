@@ -33,6 +33,10 @@
 		2637FC9E279CE9BF0019BAA4 /* contactUsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2637FC9C279CE9BF0019BAA4 /* contactUsPage.swift */; };
 		2637FCA0279CE9CB0019BAA4 /* helpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2637FC9F279CE9CB0019BAA4 /* helpPageView.swift */; };
 		2637FCA1279CE9CB0019BAA4 /* helpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2637FC9F279CE9CB0019BAA4 /* helpPageView.swift */; };
+		2637FCA3279CEC0A0019BAA4 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2637FCA2279CEC0A0019BAA4 /* ViewRouter.swift */; };
+		2637FCA4279CEC0A0019BAA4 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2637FCA2279CEC0A0019BAA4 /* ViewRouter.swift */; };
+		2637FCA6279CECFF0019BAA4 /* navigateinswiftui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2637FCA5279CECFF0019BAA4 /* navigateinswiftui.swift */; };
+		2637FCA7279CECFF0019BAA4 /* navigateinswiftui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2637FCA5279CECFF0019BAA4 /* navigateinswiftui.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,8 @@
 		2637FC99279CE8EF0019BAA4 /* settingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsPage.swift; sourceTree = "<group>"; };
 		2637FC9C279CE9BF0019BAA4 /* contactUsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactUsPage.swift; sourceTree = "<group>"; };
 		2637FC9F279CE9CB0019BAA4 /* helpPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpPageView.swift; sourceTree = "<group>"; };
+		2637FCA2279CEC0A0019BAA4 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		2637FCA5279CECFF0019BAA4 /* navigateinswiftui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigateinswiftui.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 				2637FC99279CE8EF0019BAA4 /* settingsPage.swift */,
 				2637FC9C279CE9BF0019BAA4 /* contactUsPage.swift */,
 				2637FC9F279CE9CB0019BAA4 /* helpPageView.swift */,
+				2637FCA2279CEC0A0019BAA4 /* ViewRouter.swift */,
+				2637FCA5279CECFF0019BAA4 /* navigateinswiftui.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -219,6 +227,7 @@
 				2637FC94279CE8BD0019BAA4 /* rideHailPage.swift in Sources */,
 				2637FCA0279CE9CB0019BAA4 /* helpPageView.swift in Sources */,
 				2637FC88279CD75B0019BAA4 /* dashboard.swift in Sources */,
+				2637FCA3279CEC0A0019BAA4 /* ViewRouter.swift in Sources */,
 				2600FD1D279C9D06002204D1 /* ContentView.swift in Sources */,
 				2600FD1B279C9D06002204D1 /* starhacks_space_appApp.swift in Sources */,
 				2637FC97279CE8DA0019BAA4 /* accountPage.swift in Sources */,
@@ -226,6 +235,7 @@
 				2637FC9A279CE8EF0019BAA4 /* settingsPage.swift in Sources */,
 				2637FC9D279CE9BF0019BAA4 /* contactUsPage.swift in Sources */,
 				2637FC8B279CE64E0019BAA4 /* pagehelper.swift in Sources */,
+				2637FCA6279CECFF0019BAA4 /* navigateinswiftui.swift in Sources */,
 				2637FC91279CE7750019BAA4 /* defaultPageView.swift in Sources */,
 				2637FC7F279CD40C0019BAA4 /* loginPage.swift in Sources */,
 			);
@@ -238,6 +248,7 @@
 				2637FC95279CE8BD0019BAA4 /* rideHailPage.swift in Sources */,
 				2637FCA1279CE9CB0019BAA4 /* helpPageView.swift in Sources */,
 				2637FC89279CD75B0019BAA4 /* dashboard.swift in Sources */,
+				2637FCA4279CEC0A0019BAA4 /* ViewRouter.swift in Sources */,
 				2600FD1E279C9D06002204D1 /* ContentView.swift in Sources */,
 				2600FD1C279C9D06002204D1 /* starhacks_space_appApp.swift in Sources */,
 				2637FC98279CE8DA0019BAA4 /* accountPage.swift in Sources */,
@@ -245,6 +256,7 @@
 				2637FC9B279CE8EF0019BAA4 /* settingsPage.swift in Sources */,
 				2637FC9E279CE9BF0019BAA4 /* contactUsPage.swift in Sources */,
 				2637FC8C279CE64F0019BAA4 /* pagehelper.swift in Sources */,
+				2637FCA7279CECFF0019BAA4 /* navigateinswiftui.swift in Sources */,
 				2637FC92279CE7750019BAA4 /* defaultPageView.swift in Sources */,
 				2637FC80279CD40C0019BAA4 /* loginPage.swift in Sources */,
 			);

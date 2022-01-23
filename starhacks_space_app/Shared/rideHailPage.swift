@@ -9,8 +9,11 @@ import SwiftUI
 
 struct rideHailPage: View {
     var body: some View {
+        VStack{
+        Text("Hail a Spaceship").font(.title).bold()
         Text("We're going on a trip!")
     }
+}
 }
 
 struct rideHailPage_Previews: PreviewProvider {

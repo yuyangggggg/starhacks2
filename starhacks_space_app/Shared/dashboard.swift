@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct dashboard: View {
-    @State var currentPage: Page = .helpPage
+    
+    // This reads from viewRouter to see which page it should display
+    @StateObject var viewRouter: ViewRouter
+    
     var body: some View {
-        switch currentPage {
+        switch viewRouter.currentPage {
         case .defaultPage :
-            defaultPageView()
+            defaultPageView(viewRouter: ViewRouter())
         case .rideHail :
             rideHailPage()
         case .account :
@@ -29,7 +32,7 @@ struct dashboard: View {
 
 struct dashboard_Previews: PreviewProvider {
     static var previews: some View {
-        dashboard()
+        dashboard(viewRouter: ViewRouter())
 .previewInterfaceOrientation(.portrait)
     }
 }
