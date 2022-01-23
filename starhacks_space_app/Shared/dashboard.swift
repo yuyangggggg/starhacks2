@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct dashboard: View {
+    @State var currentPage: Page = .helpPage
     var body: some View {
-        Text("Dashboard").font(.title).bold()
-        NavigationView {
-            NavigationLink("Hail a spaceship", destination: Text("Available space ships"))
-            NavigationLink("Help/Contact Us", destination: Text("No help for you"))
+        switch currentPage {
+        case .defaultPage :
+            defaultPageView()
+        case .rideHail :
+            rideHailPage()
+        case .account :
+            accountPage()
+        case .settings :
+            settingsPage()
+        case .contactUs:
+            contactUsPage()
+        case .helpPage:
+            helpPageView()
         }
     }
 }
@@ -20,5 +30,6 @@ struct dashboard: View {
 struct dashboard_Previews: PreviewProvider {
     static var previews: some View {
         dashboard()
+.previewInterfaceOrientation(.portrait)
     }
 }
