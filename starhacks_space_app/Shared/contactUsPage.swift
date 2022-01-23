@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct contactUsPage: View {
+    
+    @StateObject var viewRouter: ViewRouter
+    
     var body: some View {
-        Text("Contact Us")
+        VStack {
+            Button("Back", action: {
+                viewRouter.currentPage = .defaultPage
+            })
+            Spacer()
+            Text("Contact Us").font(.title).bold()
+            Spacer()
+        }
     }
 }
 
 struct contactUsPage_Previews: PreviewProvider {
     static var previews: some View {
-        contactUsPage()
+        contactUsPage(viewRouter: ViewRouter())
     }
 }

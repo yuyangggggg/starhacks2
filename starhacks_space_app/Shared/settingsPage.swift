@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct settingsPage: View {
+    
+    @StateObject var viewRouter: ViewRouter
+    
     var body: some View {
-        Text("Settings").bold()
+        VStack {
+            Button("Back", action: {
+                viewRouter.currentPage = .defaultPage
+            })
+            Spacer()
+            Text("Settings").bold().font(.title)
+            Spacer()
+        }
     }
 }
 
 struct settingsPage_Previews: PreviewProvider {
     static var previews: some View {
-        settingsPage()
+        settingsPage(viewRouter: ViewRouter())
     }
 }

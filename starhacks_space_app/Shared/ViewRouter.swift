@@ -11,5 +11,5 @@ import SwiftUI
 class ViewRouter: ObservableObject {
     
     // Everytime this gets updated, the dashboard view will update the display
-    @Published var currentPage: Page = .defaultPage
+    @Published var currentPage: Page = .starting
 }

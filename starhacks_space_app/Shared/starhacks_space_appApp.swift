@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct starhacks_space_appApp: App {
+struct starhacksSpaceApp: App {
         var body: some Scene { 
             WindowGroup {
-                ContentView()
+                ContentView(viewRouter: ViewRouter())
             }
         
     }

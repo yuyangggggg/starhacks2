@@ -8,6 +8,9 @@
 import Foundation
 
 enum Page {
+    case starting
+    case login
+    case signup
     case defaultPage
     case rideHail
     case account

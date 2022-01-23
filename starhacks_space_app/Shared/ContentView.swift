@@ -7,31 +7,40 @@
 
 import SwiftUI
 
+// MotherView keeping track of
 struct ContentView: View {
-    var body: some View {
-        NavigationView{
-        VStack {
-            Spacer()
-            Text("Takeoff.").font(.title).fontWeight(.bold).padding()
-            Spacer()
-            HStack {
-                // Clicking these lead user to the login and signup pages respectively
-                NavigationLink("Login", destination: Text("Hello World"))
-                Text("|")
-                NavigationLink("Sign Up", destination: Text("Hello World"))
-                }
-            
+    
+    @StateObject var viewRouter: ViewRouter
+        
+        var body: some View {
+            switch viewRouter.currentPage {
+            case .starting :
+                startingPage(viewRouter: viewRouter)
+            case .login:
+                loginPage(viewRouter: viewRouter)
+            case .signup:
+                signupPage(viewRouter: viewRouter)
+            case .defaultPage :
+                defaultPageView(viewRouter: viewRouter)
+            case .rideHail :
+                rideHailPage(viewRouter: viewRouter)
+            case .account :
+                accountPage(viewRouter: viewRouter)
+            case .settings :
+                settingsPage(viewRouter: viewRouter)
+            case .contactUs:
+                contactUsPage(viewRouter: viewRouter)
+            case .helpPage:
+                helpPageView(viewRouter: viewRouter)
+            }
+        }
     }
-    }
-}
-}
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ContentView()
+            ContentView(viewRouter: ViewRouter())
+            // check this second argument 
         }
     }
-    }
+    
 

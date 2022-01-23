@@ -7,13 +7,17 @@
 
 import SwiftUI
 
-struct signupPage2: View {
+struct signupPage: View {
  
+    @StateObject var viewRouter: ViewRouter
     @State var email = ""
     @State var password = ""
         
         var body: some View {
             VStack() {
+                Button("Back", action: {
+                    viewRouter.currentPage = .starting
+                })
                 Spacer()
                 Text("Sign Up.")
                     .font(.title).bold()
@@ -27,14 +31,16 @@ struct signupPage2: View {
                 SecureField("Re-Enter Password", text: self.$password).padding().textFieldStyle(.roundedBorder)
                 Spacer()
                 // Needs a functioning button
-                Button("Sign Up") {}
+                Button("Sign Up", action: {
+                    viewRouter.currentPage = .defaultPage
+                })
                 Spacer()
     }
 }
 }
 
-struct signupPage2_Previews: PreviewProvider {
+struct signupPage_Previews: PreviewProvider {
     static var previews: some View {
-        signupPage2()
+        signupPage(viewRouter: ViewRouter())
     }
 }

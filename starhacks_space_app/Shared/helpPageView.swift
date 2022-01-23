@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct helpPageView: View {
+    
+    @StateObject var viewRouter: ViewRouter
+    
     var body: some View {
-        Text("Help")
+        VStack {
+            Button("Back", action: {
+                viewRouter.currentPage = .defaultPage
+            })
+            Spacer()
+            Text("Help").font(.title).bold()
+            Spacer()
+        }
     }
 }
 
 struct helpPageView_Previews: PreviewProvider {
     static var previews: some View {
-        helpPageView()
+        helpPageView(viewRouter: ViewRouter())
     }
 }
