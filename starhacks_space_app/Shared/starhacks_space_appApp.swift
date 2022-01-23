@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct starhacks_space_appApp: App {
-        var body: some Scene {
+        var body: some Scene { 
             WindowGroup {
                 ContentView()
             }
